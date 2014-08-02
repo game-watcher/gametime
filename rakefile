@@ -1,0 +1,7 @@
+#-*- coding: utf-8 -*-
+require 'rspec/core/rake_task'
+
+desc 'rake push      #发送到本地gitolite'
+task :push do
+  exec "git push -u origin gh-page"
+end
